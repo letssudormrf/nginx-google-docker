@@ -27,4 +27,10 @@ To create the route:
 
     oc expose service <ServiceName>
 
+Or
+
+    oc create route edge en --service=nginx-google-docker --port=8001-tcp
+    oc create route edge ja --service=nginx-google-docker --port=8081-tcp
+    oc create route edge cn --service=nginx-google-docker --port=8086-tcp
+    oc create route edge tw --service=nginx-google-docker --port=8886-tcp
 
